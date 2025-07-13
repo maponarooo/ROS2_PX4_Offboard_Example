@@ -59,6 +59,11 @@ pip install --user jsonschema
 pip install --user jinja2
 ```
 
+Install Gnome-terminal
+```
+sudo apt install gnome-terminal
+```
+
 ### Build Micro DDS
 As mentioned in the [PX4 Docs](https://docs.px4.io/main/en/ros/ros2_comm.html#setup-micro-xrce-dds-agent-client) run this code in order to build MicroDDS on your machine
 
