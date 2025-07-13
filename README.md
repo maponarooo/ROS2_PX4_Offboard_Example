@@ -152,10 +152,28 @@ We will run this every time we build. It will also need to be run in every termi
 ### Running the Code
 This example has been designed to run from one launch file that will start all the necessary nodes. The launch file will run a python script that uses gnome terminal to open a new terminal window for MicroDDS and Gazebo.
 
-Run this code to start the example
+Run this code to start the example (Not excutable on WSL)
 
 ```
 ros2 launch px4_offboard offboard_velocity_control.launch.py
+```
+
+If you want to excute on the WSL, follow up....
+1. run PX4 SITL
+```
+make px4_sitl gz_x500
+```
+2. run Micro-XRCE-DDS
+```
+MicroXRCEAgent udp4 -p 8888
+```
+3. run velocity_control
+```
+ros2 run px4_offboard velocity_control
+```
+4. run keyboard control
+```
+ros2 run px4_offboard control
 ```
 
 This will run numerous things. In no particular order, it will run:
