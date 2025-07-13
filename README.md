@@ -103,7 +103,7 @@ git clone https://github.com/PX4/px4_msgs.git -b release/1.15
 Once again be sure you are still in the src directory of your workspace. Run this code to clone in our example package
 
 ```
-git clone https://github.com/ARK-Electronics/ROS2_PX4_Offboard_Example.git
+git clone https://github.com/maponarooo/ROS2_PX4_Offboard_Example
 ```
 
 Run this code to clone the repo
